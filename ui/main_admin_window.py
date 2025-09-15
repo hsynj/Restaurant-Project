@@ -498,7 +498,7 @@ class MainAdminWindow(QMainWindow):
             print(f"Error in handle_generate_food_sales_report: {e}")
 
     def _populate_report_customer_combo(self):
-        """کمبوباکس انتخاب مشتری را با لیست کاربران پر می کند."""
+        """Fill select user combo box with user list."""
         self.report_customer_select_combo.clear()
         self.report_customer_select_combo.addItem("همه مشتریان", userData="ALL") # یا None
         
@@ -983,4 +983,5 @@ class MainAdminWindow(QMainWindow):
 
 
 if __name__ == '__main__':
+
     print("You cant run this file currently, run main.py")
