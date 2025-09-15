@@ -1,4 +1,3 @@
-import sys
 from PySide6.QtWidgets import QWidget, QVBoxLayout
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg as FigureCanvas
@@ -6,8 +5,8 @@ from matplotlib.backends.backend_qtagg import NavigationToolbar2QT as Navigation
 import matplotlib.pyplot as plt
 
 try:
-    plt.rcParams['font.family'] = 'IRAN' # یا هر فونت فارسی دیگری که دارید مثل 'Tahoma'
-    plt.rcParams['axes.unicode_minus'] = False # برای نمایش صحیح علامت منفی
+    plt.rcParams['font.family'] = 'IRAN' # Insert your font name
+    plt.rcParams['axes.unicode_minus'] = False
 except Exception as e:
     print(f"Could not set Persian font for Matplotlib: {e}")
 
@@ -31,7 +30,7 @@ class MatplotlibChartWidget(QWidget):
             bars = ax.bar(x_labels, y_values, color='#3498db')
             for bar in bars:
                 yval = bar.get_height()
-                ax.text(bar.get_x() + bar.get_width()/2.0, yval + 0.05 * max(y_values) if y_values else 0, # تنظیم فاصله متن از بالای میله
+                ax.text(bar.get_x() + bar.get_width()/2.0, yval + 0.05 * max(y_values) if y_values else 0,
                         f'{yval:,.0f}', ha='center', va='bottom', fontsize=9)
                 
             ax.set_title(title, fontsize=12, fontweight='bold')
@@ -39,8 +38,8 @@ class MatplotlibChartWidget(QWidget):
             ax.set_ylabel(y_axis_label, fontsize=10)
 
             if x_labels and isinstance(x_labels[0], str) and max(len(label) for label in x_labels) > 5:
-                 ax.tick_params(axis='x', rotation=45, labelsize=8) # تغییرات اینجا برای چرخش بهتر
-                 self.figure.subplots_adjust(bottom=0.25) # ایجاد فضای بیشتر برای لیبل های چرخانده شده
+                 ax.tick_params(axis='x', rotation=45, labelsize=8)
+                 self.figure.subplots_adjust(bottom=0.25)
             else:
                  ax.tick_params(axis='x', labelsize=8)
                  self.figure.subplots_adjust(bottom=0.15)
