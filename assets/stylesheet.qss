@@ -1,0 +1,254 @@
+CustomerWindow {
+    background-color: #f0f5f3;
+    color: black;
+}
+
+CustomerWindow QLabel {
+    color: black;
+    background-color: transparent;
+}
+
+CustomerWindow QPushButton {
+    color: black;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+CustomerWindow QPushButton:hover {
+    background-color: #e0e0e0;
+}
+
+CustomerWindow QPushButton:pressed {
+    background-color: #d0d0d0;
+}
+
+CustomerWindow QLineEdit {
+    color: black;
+    background-color: #f0f5f3;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+CustomerWindow QTableWidget {
+    color: black;
+    background-color: white;
+    border: 0px;
+    gridline-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+CustomerWindow QHeaderView::section {
+    color: black;
+    background-color: #e8e8e8; 
+    padding: 4px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+CustomerWindow QHeaderView {
+    color: black;
+    background-color: #f0f5f3;
+}
+CustomerWindow QTableWidget QHeaderView::section:vertical {
+    background-color: #e8e8e8;
+    color: #1a1a1a;
+    border: 0px;
+    
+    border-left: none;
+    border-top: none;
+    
+    padding: 4px;
+}
+CustomerWindow QTableWidget QHeaderView::section:horizontal {
+    background-color: #e8e8e8;
+    color: #1a1a1a;
+    border: 0px;
+    
+    border-left: none;
+    border-top: none;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 4px;
+}
+CustomerWindow QTableCornerButton::section {
+    background-color: #f0f5f3;
+    border: 0px;
+}
+
+CustomerWindow QTabBar::tab {
+    color: black;
+    background-color: #e0e0e0;
+    padding: 8px 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    margin-top: 5px;
+
+}
+
+CustomerWindow QTabBar::tab:selected {
+    background-color: #f0f5f3;
+    border-bottom-color: white;
+}
+
+CustomerWindow QTabWidget::pane {
+    border-top: 1px solid #ccc;
+}
+
+#rightLayoutSection {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 10px rgb(0, 0, 0);
+}
+
+#topRightLayoutSection {
+    background-color: #f0f5f3;
+    border-radius: 10px;
+}
+
+#downRightLayoutSection {
+    background-color: #f0f5f3;
+    border-radius: 10px;
+}
+
+#userInfoLabel {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#cartTableLayout {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#cartTable{
+    color: black;
+    background-color: white;
+    selection-background-color: #f0f5f3;
+    border: 0px solid #ddd;
+    gridline-color: white;
+}
+QTableWidget::item:selected {
+    background-color: #f0f5f3;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+#discountLayout{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#totalPriceInfo {
+    background-color: white;
+    border-radius: 10px;
+}
+
+CustomerWindow QScrollArea {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+#MenuWidgetContainer {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#timelineLayout {
+    background-color: white;
+    border-radius: 10px;
+}
+
+CustomerWindow QMessageBox {
+    background-color: white;
+    border: 0px;
+    min-width: 200px;
+}
+CustomerWindow QMessageBox QLabel {
+    color: black;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+CustomerWindow QMessageBox QPushButton {
+    color: black;
+    background-color: #f0f0f0;
+    border: 1px solid #bbbbbb;
+    padding: 6px 15px;
+    border-radius: 10px;
+    min-width: 60px;
+    margin-left: 5px;
+}
+CustomerWindow QMessageBox QPushButton:hover {
+    background-color: #e0e0e0;
+}
+CustomerWindow QMessageBox QPushButton:pressed {
+    background-color: #d0d0d0;
+}
+#topupAmountInput {
+    max-width: 400px;
+    background-color: white;
+}
+#topupAmountButton {
+    max-width: 100px;
+    border: 1px solid #cccccc;
+}
+
+/* =========== AuthPage =========== */
+AuthPage {
+    background-color: #f0f5f3;
+    color: black;
+}
+
+AuthPage QLabel {
+    color: black;
+    background-color: transparent;
+}
+
+AuthPage QPushButton {
+    color: black;
+    background-color: #f0f5f3;
+    border: 1px solid #cccccc;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+AuthPage QPushButton:hover {
+    background-color: #e0e0e0;
+}
+
+AuthPage QPushButton:pressed {
+    background-color: #d0d0d0;
+}
+
+AuthPage QLineEdit {
+    color: black;
+    background-color: white;
+    padding: 4px;
+    border-radius: 10px;
+}
+AuthPage QMessageBox {
+    background-color: white;
+    border: 0px;
+    min-width: 200px;
+}
+AuthPage QMessageBox QLabel {
+    color: black;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+AuthPage QMessageBox QPushButton {
+    color: black;
+    background-color: #f0f0f0;
+    border: 1px solid #bbbbbb;
+    padding: 6px 15px;
+    border-radius: 10px;
+    min-width: 60px;
+    margin-left: 5px;
+}
+AuthPage QMessageBox QPushButton:hover {
+    background-color: #e0e0e0;
+}
+AuthPage QMessageBox QPushButton:pressed {
+    background-color: #d0d0d0;
+}
