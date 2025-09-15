@@ -858,3 +858,6 @@ def get_general_stats():
         return 0, 0
     finally:
         conn.close()
+
+
+create_tables()
