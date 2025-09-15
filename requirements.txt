@@ -1,0 +1,5 @@
+PySide6
+matplotlib
+arabic_reshaper
+python-bidi
+sqlite3
