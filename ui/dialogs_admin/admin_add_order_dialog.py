@@ -66,7 +66,7 @@ class AdminAddOrderDialog(QDialog):
         self._populate_food_combo()
 
     def _populate_user_combo(self):
-        """کاربران را از دیتابیس خوانده و در کمبوباکس کاربران نمایش می دهد."""
+        """Read users from database and show in combo box."""
         self.user_select_combo.clear()
         users = get_all_users()
         if users:
@@ -161,4 +161,5 @@ class AdminAddOrderDialog(QDialog):
         }
 
 if __name__ == '__main__':
+
     print("You cant run this file currently, run main.py")
