@@ -57,7 +57,8 @@ class FoodItemWidget(QWidget):
         """وقتی روی این ویجت دوبار کلیک شد، سیگنال clicked را با شناسه غذا منتشر می کند."""
         if event.button() == Qt.LeftButton:
             self.clicked.emit(self.food_id)
-        super().mouseDoubleClickEvent(event) # رویداد را به کلاس والد ارسال می کنیم
+        super().mouseDoubleClickEvent(event)
 
 if __name__ == '__main__':
+
     print("You cant run this file currently, run main.py")
