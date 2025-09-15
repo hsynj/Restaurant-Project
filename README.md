@@ -30,6 +30,19 @@ A feature-rich, desktop Point-of-Sale (POS) system for a take-out restaurant, bu
 - **📞 Point-of-Sale (POS) Functionality:** Ability to create new orders and register new customers directly, catering to phone or walk-in clients.
 - 
 ## Screenshots
+**Register & Login Page**
+![Login and Registration Page](assets/screenshots/Login-Page.png)
+
+**Admin Panel**
+![Admin Panel Dashboard](assets/screenshots/Admin-Dashboard.png)
+![Admin Report Panel](assets/screenshots/Admin-Report.png)
+
+**Seller Panel Dashboard**
+![Seller Panel Dashboard](assets/screenshots/Seller-panel.png)
+
+**Customer Menu Panel**
+![Customer Visual Menu](assets/screenshots/User-Panel.png)
+![Customer Visual Menu](assets/screenshots/User-Panel2.png)
 
 ## Tech Stack
 
